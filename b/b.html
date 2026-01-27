@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรี่รูปภาพ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        /* กำหนดรูปแบบตาราง */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 15px; /* ระยะห่างระหว่างรูป */
+        }
+        td {
+            vertical-align: top; /* จัดข้อความให้อยู่ด้านบนเสมอถ้าความสูงไม่เท่ากัน */
+            width: 20%; /* แบ่ง 5 ช่อง ให้กว้างเท่าๆ กัน (100% / 5) */
+        }
+        /* ปรับขนาดรูปภาพให้พอดีช่อง ไม่ล้น */
+        img {
+            width: 100%;       
+            height: 150px;     /* บังคับความสูงให้เท่ากัน (ตัดส่วนเกินออก) */
+            object-fit: cover; /* ปรับสัดส่วนรูปไม่ให้บิดเบี้ยว */
+            display: block;
+            margin-bottom: 5px;
+        }
+        .caption {
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>พีรพัฒน์ ศรีห้วยไพร (บีม)</h1>
+
+    <table>
+        <tr>
+            <td>
+                <img src="img/1.jpg" alt="ปั๊ก">
+                <div class="caption">ปั๊ก</div>
+            </td>
+            <td>
+                <img src="img/2.jpg" alt="ชิวาวา">
+                <div class="caption">ชิวาวา</div>
+            </td>
+            <td>
+                <img src="img/3.jpg" alt="เชาเชา">
+                <div class="caption">เชาเชา</div>
+            </td>
+            <td>
+                <img src="img/4.jpg" alt="บีเกิ้ล">
+                <div class="caption">บีเกิ้ล</div>
+            </td>
+            <td>
+                <img src="img/5.jpg" alt="ลาบราดอร์">
+                <div class="caption">ลาบราดอร์</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/6.jpg" alt="คอร์กี้">
+                <div class="caption">คอร์กี้</div>
+            </td>
+            <td>
+                <img src="img/7.jpg" alt="ปอมเมอเรเนียน">
+                <div class="caption">ปอมเมอเรเนียน</div>
+            </td>
+            <td>
+                <img src="img/8.jpg" alt="ชิบะ">
+                <div class="caption">ชิบะ</div>
+            </td>
+            <td>
+                <img src="img/9.jpg" alt="บีเกิ้ล">
+                <div class="caption">บีเกิ้ล</div>
+            </td>
+            <td>
+                <img src="img/10.jpg" alt="ปั๊ก">
+                <div class="caption">ปั๊ก</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/11.jpg" alt="ลาบราดอร์">
+                <div class="caption">ลาบราดอร์</div>
+            </td>
+            <td>
+                <img src="img/12.jpg" alt="โกลเด้น">
+                <div class="caption">โกลเด้น</div>
+            </td>
+            <td>
+                <img src="img/13.jpg" alt="ปอมเมอเรเนียน">
+                <div class="caption">ปอมเมอเรเนียน</div>
+            </td>
+            <td>
+                <img src="img/14.jpg" alt="ปั๊ก">
+                <div class="caption">ปั๊ก</div>
+            </td>
+            <td>
+                <img src="img/15.jpg" alt="เชาเชา">
+                <div class="caption">เชาเชา</div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
