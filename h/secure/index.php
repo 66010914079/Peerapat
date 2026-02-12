@@ -9,8 +9,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // 3. เชื่อมต่อฐานข้อมูล (ตรวจสอบชื่อไฟล์ connectdb.php ให้ถูกต้อง)
-if (file_exists(".connectdb.php")) {
-    include_once(".connectdb.php");
+if (file_exists("../h/connectdb.php")) {
+    include_once("../h/connectdb.php");
 } else {
     die("<center style='margin-top:50px; color:red;'>ไม่พบไฟล์ connectdb.php กรุณาตรวจสอบ!</center>");
 }
