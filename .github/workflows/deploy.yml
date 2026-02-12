@@ -1,0 +1,18 @@
+name: Deploy to Server
+on:
+  push:
+    branches: [ main ] # สังเกตที่มุมซ้ายล่างของ VS Code คุณใช้ชื่อ main ถูกต้องแล้วครับ
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /var/www/html/Peerapat
+            git pull origin main
