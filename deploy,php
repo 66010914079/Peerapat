@@ -1,5 +1,5 @@
 <?php
-// สั่ง pull ข้อมูลจาก GitHub มาที่ Server
+// สั่ง Pull โดยตรง
 $output = shell_exec('cd /var/www/html/Peerapat && git pull origin main 2>&1');
-echo "<pre>$output</pre>";
+echo $output;
 ?>
