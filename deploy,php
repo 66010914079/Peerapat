@@ -1,5 +1,5 @@
 <?php
-// สั่งให้ Server เข้าไปที่โฟลเดอร์โปรเจกต์แล้วดึงโค้ดจาก GitHub
+// สั่ง pull ข้อมูลจาก GitHub มาที่ Server
 $output = shell_exec('cd /var/www/html/Peerapat && git pull origin main 2>&1');
 echo "<pre>$output</pre>";
 ?>
