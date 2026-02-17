@@ -7,7 +7,7 @@ if(isset($_POST['Submit'])) {
     $rid = $_POST['rid'];
     $ext = pathinfo($_FILES['pimage']['name'], PATHINFO_EXTENSION);
     
-    $sql2 = "INSERT INTO `provinces` (`p_id`, `p_name`, `r_id`) VALUES (NULL, '$pname', '$rid')";
+    $sql2 = "INSERT INTO provinces (p_name, r_id, p_ext) VALUES ('$pname', '$rid', '$ext')";
     mysqli_query($conn, $sql2) or die("insert ไม่ได้");
     
     $pic_id = mysqli_insert_id($conn);
