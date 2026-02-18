@@ -1,0 +1,4 @@
+<Files "deploy.php">
+    Order allow,deny
+    Deny from all
+</Files>
