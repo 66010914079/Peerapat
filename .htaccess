@@ -1,8 +1,8 @@
-# ปิดการเข้าถึงไฟล์ deploy.php จาก Browser
+# 1. สั่งให้ Server ซ่อนชื่อไฟล์ deploy.php จากรายการหน้าเว็บ
+IndexIgnore deploy.php
+
+# 2. ป้องกันคนพิมพ์ชื่อไฟล์เข้าตรงๆ (ถ้าใครพิมพ์ต่อท้ายระบบจะขึ้น Error 403)
 <Files "deploy.php">
     Order allow,deny
     Deny from all
 </Files>
-
-# ซ่อนชื่อไฟล์ deploy.php ไม่ให้ปรากฏในรายการ Index
-IndexIgnore deploy.php
