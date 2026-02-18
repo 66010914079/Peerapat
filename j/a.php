@@ -6,7 +6,7 @@
 <title>ข้อมูลภาค</title>
 </head>
 <body>
-<h1>ข้อมูลภาค--พีรพัฒน์ ศรีห้วยไพร (บีม)</h1>
+<h2>ข้อมูลภาค--พีรพัฒน์ ศรีห้วยไพร (บีม)</h2>
 
 <form method="post" action="">
 ชื่อภาค: <input type="text" name="rname" autofocus required>
