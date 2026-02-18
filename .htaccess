@@ -1,4 +1,8 @@
+# ปิดการเข้าถึงไฟล์ deploy.php จาก Browser
 <Files "deploy.php">
     Order allow,deny
     Deny from all
 </Files>
+
+# ซ่อนชื่อไฟล์ deploy.php ไม่ให้ปรากฏในรายการ Index
+IndexIgnore deploy.php
