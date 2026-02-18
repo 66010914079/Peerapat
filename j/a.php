@@ -24,7 +24,7 @@ echo "<script>window.location.href='a.php';</script>"; // รีเฟรชห�
 ?>
 
 <table border="1">
-<tr>
+<tr> 
 <th>รหัสภาค</th>
 <th>ชื่อภาค</th>
 <th>ลบ</th>
